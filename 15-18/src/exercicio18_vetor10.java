@@ -17,13 +17,26 @@ public class exercicio18_vetor10 {
             numero[i] = leia.nextInt();
         }
 
-        System.out.println("Os números pares são: ");
+        boolean par = false;
 
         for (int i = 0; i < numero.length; i++) {
             if (numero[i] % 2 == 0) {
-                System.out.println(numero[i]);
+                par = true;
+            }
+        }
+
+        if (par == true) {
+            System.out.println("Os números pares são: ");
+            for (int i = 0; i < numero.length; i++) {
+                if (numero[i] % 2 == 0) {
+                    System.out.println(numero[i]);
+                }
             }
 
+            return;
         }
+
+        System.out.println("Todos os números são ímpares!");
+
     }
 }
