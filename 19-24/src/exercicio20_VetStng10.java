@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exexrcicio20_VetStng10 {
+public class exercicio20_VetStng10 {
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
 
@@ -28,10 +28,6 @@ public class exexrcicio20_VetStng10 {
         nomes[8] = "Leo";
         nomes[9] = "Vini";
 
-//Criação de v ou f:
-
-       // boolean nomeEnc = false;
-
 //Solicitação p usuário:
 
         System.out.println("Digite o nome que você deseja saber a posição: ");
@@ -42,7 +38,6 @@ public class exexrcicio20_VetStng10 {
         for(int i = 0; i < nomes.length; i++) {
             if (nomeDig.equals(nomes[i])) {
                 System.out.println("O nome procurado encontra-se na posição: " + i);
-               // nomeEnc = true;
                 return;
             }
         }
