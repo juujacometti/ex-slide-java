@@ -39,17 +39,16 @@ public class exercicio21_VetStng5 {
 
             for (int i = 0; i < nome.length; i++) {
                 if (busca.equals(nome[i])) {
-                    //tentativa = true;
                     System.out.println("O nome que você procura está na posição: " + i + "\nVocê usou " + tentativa + " tentativa(s)!");
                     return;
                 }
             }
 
             System.out.println("O nome não foi encontrado na tentativa " + tentativa + ", tente novamente!");
+
         }
 
         System.out.println("Você utilizou todas as 5 tentativas! O programa será encerrado.");
-
 
     }
 
