@@ -30,7 +30,7 @@ public class exercicio21_VetStng5 {
 
 // Solicitação p usuário (nome):
 
-        System.out.println("Digite aqui o nome que deseja procurar: ");
+        System.out.println("Digite aqui o nome que deseja encontrar: ");
         busca = leia.nextLine();
 
 // Criação de looping:
@@ -42,10 +42,13 @@ public class exercicio21_VetStng5 {
                     System.out.println("O nome que você procura está na posição: " + i + "\nVocê usou " + tentativa + " tentativa(s)!");
                     return;
                 }
+                else {
+                    while (tentativa <= 5){
+                        System.out.println("O nome não foi encontrado na tentativa: " + tentativa + ", tente novamente");
+                        tentativa++;
+                    }
+                }
             }
-
-            System.out.println("O nome não foi encontrado na tentativa " + tentativa + ", tente novamente!");
-
         }
 
         System.out.println("Você utilizou todas as 5 tentativas! O programa será encerrado.");
