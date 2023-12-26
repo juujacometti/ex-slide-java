@@ -18,43 +18,35 @@ public class exercicio21_VetStng5 {
 // Atribuição de valores no vetor:
 
         nome[0] = "Julya";
-        nome[1] = "Bia";
+        nome[1] = "Beatriz";
         nome[2] = "Ana";
-        nome[3] = "Jaque";
+        nome[3] = "Jaqueline";
         nome[4] = "Caio";
         nome[5] = "Flor";
-        nome[6] = "Duda";
+        nome[6] = "Eduarda";
         nome[7] = "Maya";
         nome[8] = "Sofia";
         nome[9] = "Pedro";
 
-// Solicitação p usuário (nome):
+// Looping:
 
-        System.out.println("Digite aqui o nome que deseja encontrar: ");
-        busca = leia.nextLine();
+        for(int tentativa = 1; tentativa < 5; tentativa++) {
 
-// Criação de looping:
+            System.out.println("Digite aqui o nome que deseja encontrar: ");
+            busca = leia.nextLine();
 
-        for (int tentativa = 1; tentativa <= 5; tentativa++) {
+            for(int i = 0; i < nome.length; i++) {
 
-            for (int i = 0; i < nome.length; i++) {
                 if (busca.equals(nome[i])) {
-                    System.out.println("O nome que você procura está na posição: " + i + "\nVocê usou " + tentativa + " tentativa(s)!");
+                    System.out.println("O nome procurado está na posição: " + i + "\nVocê utilizou " + tentativa + " tentativas!");
                     return;
                 }
-                else {
-                    while (tentativa <= 5){
-                        System.out.println("O nome não foi encontrado na tentativa: " + tentativa + ", tente novamente");
-                        tentativa++;
-                    }
-                }
             }
+
+            System.out.println("O nome que você digitou não foi encontrado na tentativa " + tentativa + "! Tente digitar outro nome: ");
+
         }
 
         System.out.println("Você utilizou todas as 5 tentativas! O programa será encerrado.");
-
     }
-
 }
-
-
