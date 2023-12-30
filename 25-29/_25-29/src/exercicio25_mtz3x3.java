@@ -6,7 +6,7 @@ public class exercicio25_mtz3x3 {
 
 // OBJETIVO: Preencha uma matriz de 3x3 com números inteiros informados pelo usuário e apresente os valores armazenados como uma tabela 3x3.
 
-// Vetor:
+// Matriz:
 
         int[][] numero = new int[3][3];
 
