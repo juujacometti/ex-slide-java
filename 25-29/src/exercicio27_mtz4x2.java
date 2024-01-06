@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exercicio_mtz4x2 {
+public class exercicio27_mtz4x2 {
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
 
