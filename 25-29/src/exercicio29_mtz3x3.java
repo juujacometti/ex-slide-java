@@ -24,16 +24,15 @@ public class exercicio29_mtz3x3 {
         for(int l = 0; l < a.length; l++) {
             for (int c = 0; c < a.length; c++) {
                 System.out.println(a[l][c] + " = " + "[" + (l + 1) + "," + (c + 1) + "]");
-                b[l][c] = a[l][c] * 2;
             }
         }
 
         System.out.println("\nO dobro dos números escolhidos são: ");
         for(int l = 0; l < a.length; l++) {
             for(int c = 0; c < b.length; c++) {
+                b[l][c] = a[l][c] * 2;
                 System.out.println(b[l][c] + " = " + "[" + (l + 1) + "," + (c + 1) + "]");
             }
         }
-
     }
 }
